@@ -1,0 +1,45 @@
+
+
+server:
+  port: 8080
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    password: '!tigerit36'
+    url: jdbc:mysql://localhost:3306/user-registration
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+welcome:
+  message: Hello to Noor's Practice security project
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+#
+#---
+#spring:
+#  profiles: prod
+#  datasource:
+#    driver-class-name: com.mysql.jdbc.Driver
+#    password: '!tigerit36'
+#    url: jdbc:mysql://localhost:3306/dcbapp-prod
+#    username: root
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    show-sql: true
+#welcome:
+#  message: Hello to Noor's Practice Project
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: '*'
+#
+#---
+
